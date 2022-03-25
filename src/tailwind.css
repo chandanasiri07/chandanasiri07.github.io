@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+.mobile-nav {
+  transition: all 0.3s ease;
+  @apply absolute top-0 w-full left-0 bg-accent-light-violet flex justify-center items-center h-0 text-xl text-center font-semibold tracking-widest overflow-hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-montserrat;
+}
+
+.btn {
+  @apply px-6 py-2 m-2 md:text-xl lg:px-8 lg:py-4 transition rounded-md bg-accent-light-violet text-accent-violet font-bold;
+}
+
+.btn-dark {
+  @apply px-6 py-2 m-2 md:text-xl lg:px-8 lg:py-4 transition rounded-md bg-accent-violet text-white font-bold;
+}
+
+.services-card {
+  @apply flex items-start px-1 py-3;
+}
+
+.form input {
+  @apply h-10 py-2 mt-1 mb-3 px-4 outline-none;
+}
+.form textarea {
+  @apply h-10 py-2 px-4 outline-none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.lds-ring {
+  @apply z-50  overflow-hidden fixed w-screen h-screen flex items-center justify-center bg-white;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 8px solid #4d13d1;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #4d13d1 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.mySlides {
+  transition: opacity 0.2s;
+  /* background-color: #000; */
+}
+.animate__fadeInDown {
+  --animate-duration: 0.2s;
+}
